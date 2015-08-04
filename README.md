@@ -1,9 +1,3 @@
----
-layout: post
-title:  "The Javascript FrontEnd Quagmire"
-date:   2015-08-03
-categories: courses
----
 ##Goal
   Use Highcharts as the base library. All the changes and enhancements should be independent and be written as plugins.  Upgrading the library version should be only a config change (bumping up version number in some configuration file).
 
