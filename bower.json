@@ -1,0 +1,9 @@
+{
+  "name": "gulp-webapp",
+  "private": true,
+  "dependencies": {
+    "jquery": "~1.11.0",
+    "highcharts-release": "~4.1.7"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,38 @@
+{
+  "name": "gulp-webapp",
+  "version": "0.0.1",
+  "dependencies": {},
+  "description": "Optimal structure to consume Highcharts",
+  "devDependencies": {
+    "connect": "^2.14.4",
+    "connect-livereload": "^0.4.0",
+    "gulp": "^3.6.0",
+    "gulp-autoprefixer": "^0.0.7",
+    "gulp-bower-files": "^0.2.1",
+    "gulp-cache": "^0.1.1",
+    "gulp-clean": "^0.2.4",
+    "gulp-csso": "^0.2.6",
+    "gulp-filter": "^0.4.1",
+    "gulp-flatten": "^0.0.2",
+    "gulp-imagemin": "^0.5.0",
+    "gulp-jshint": "^1.5.3",
+    "gulp-karma": "0.0.4",
+    "gulp-livereload": "^1.2.0",
+    "gulp-load-plugins": "^0.5.0",
+    "gulp-size": "^0.3.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-useref": "^0.4.2",
+    "jasmine-core": "^2.3.4",
+    "jshint-stylish": "^0.2.0",
+    "karma": "^0.13.3",
+    "karma-coverage": "^0.4.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "opn": "^0.1.1",
+    "phantomjs": "^1.9.17",
+    "wiredep": "^1.4.3"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}

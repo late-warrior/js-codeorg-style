@@ -1,0 +1,8 @@
+{
+  "name": "gulp-webapp",
+  "private": true,
+  "dependencies": {
+    "jasmine": "~2.3.4"
+  },
+  "devDependencies": {}
+}
