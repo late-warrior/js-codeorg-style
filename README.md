@@ -69,9 +69,10 @@ We need to have node and npm installed.  This is more of a systems configuration
     ```
  
  1. Once node npm is installed, you need to instruct it to consider a certain directory as the *lib* which contains all the node modules installed in the system.  Any installation that runs with the 'g' flag will put modules into this folder.  This can be achieved by setting NODE_PATH to the directory where you want all your node modules to go into.  Put this command in your ~/.bashrc.
-  
+   ```
    export NODE_PATH=$HOME/.npm-packages/lib/node_modules
- 
+   ```
+   
  1. Install gulp 
  ```
  npm install -g gulp
@@ -79,6 +80,10 @@ We need to have node and npm installed.  This is more of a systems configuration
  1. Install bower
  ```
  npm install -g bower
+ ```
+ 1. Add gulp and bower to the PATH:
+ ```
+ export PATH=$HOME/.npm-packages/bin:$PATH
  ```
  1. Navigate to this directories home and install dependencies from this repo's package.json
  ```
@@ -99,6 +104,7 @@ We need to have node and npm installed.  This is more of a systems configuration
 ###Running the server
  1. Run **gulp serve** to run the server
  1. **gulp watch** can be used to live-reload all resources
+ 1. Other tasks can be found in the gulpfile.js file
  
 ## TODO
 
