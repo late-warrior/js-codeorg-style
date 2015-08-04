@@ -58,6 +58,8 @@ This was/is the single biggest source of confusion.  Constructs like 'require(jq
 
 ##Using this repo
 
+###One time configuration
+
 We need to have node and npm installed.  This is more of a systems configuration thing, but the easiest way to install (without needing to sudo) I felt was to:
 
  1. Download the node tar.gz binary file from [here](https://nodejs.org/download/) and put it somewhere on your drive (say /home/sriram/node-js/).  Untar and unzip.  This contains both node and npm.
@@ -90,10 +92,13 @@ We need to have node and npm installed.  This is more of a systems configuration
   * Write a git post-hook to run these commands automatically whenever someone git clone's the repo.
   * Write a gulp task to run these
   * Write a init script that will run these commands
-
- 1. Run **gulp serve** to open a 'livereload' server.
+  
  1. There is no concept of virtualenv.  If the module available in the system wide directory doesn't cut it for you, there is an option to install it in your project specific node_modules folder.
  1. Frankly, I still don't understand completely npm's module resolution algorithm.  Will have to observe it more closely.
+
+###Running the server
+ 1. Run **gulp serve** to run the server
+ 1. **gulp watch** can be used to live-reload all resources
  
 ## TODO
 
