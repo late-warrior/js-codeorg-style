@@ -74,3 +74,15 @@ This was/is the single biggest source of confusion.  Constructs like 'require(jq
 #### TODO
 
 I still need to find a way to organize code in userland as 'modules'.  Whether we really need this or we can live with a couple of globals in this application is a call that I need take.
+
+##Using this repo
+
+Assuming you have the necessary tools (node, npm, bower), after cloning this repo, run the following commands from the root of the repo:
+
+ 'npm install'
+ 'bower install'
+
+ This is a one time thing and will ensure all development dependencies are met.  Some other ways to achieve this could be:
+  * Write a git post-hook to run these commands automatically whenever someone git clone's the repo.
+  * Write a gulp task to run these
+  * Write a init script that will run these commands
