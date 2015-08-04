@@ -56,7 +56,7 @@ This is the common lingo:
 
 This was/is the single biggest source of confusion.  Constructs like 'require(jquery')' wont work on the client side.  If you want server like behavior on the client side (which isn't an outrageous thing to expect given that you are coding in javascript), we need to use something like browserify.  Also, we need to jump through hoops to make browserify work with libraries that weren't designed with CMD in mind.
 
-##Using this repo
+###Using this repo
 
 We need to have node and npm installed.  This is more of a systems configuration thing, but the easiest way to install (without needing to sudo) I felt was to:
 
@@ -65,20 +65,21 @@ We need to have node and npm installed.  This is more of a systems configuration
  
     export PATH=$HOME/software/node-v0.12.7-linux-x64/bin:$PATH
  
- 1. Once node npm is installed, you need to instruct it to consider a certain directory as the *lib* which contains all the node modules installed in the system.  Any installation that runs with the 'g' flag will put modules into this folder.  This can be achieved by setting NODE_PATH to the directory where you want all your node modules to go into.
+ 1. Once node npm is installed, you need to instruct it to consider a certain directory as the *lib* which contains all the node modules installed in the system.  Any installation that runs with the 'g' flag will put modules into this folder.  This can be achieved by setting NODE_PATH to the directory where you want all your node modules to go into.  Put this command in your ~/.bashrc.
+  
+   export NODE_PATH=$HOME/.npm-packages/lib/node_modules
  
-1. Install gulp - npm install -g gulp
-1. Install bower - npm install -g bower
-1. Install dependencies from this repo's package.json - npm install
-1. Install bower components - bower install
-1. Above steps are a one time thing and will ensure all development dependencies are met.  Some other ways to achieve this could be:
+ 1. Install gulp - npm install -g gulp
+ 1. Install bower - npm install -g bower
+ 1. Install dependencies from this repo's package.json - npm install
+ 1. Install bower components - bower install
+ 1. Above steps are a one time thing and will ensure all development dependencies are met.  Some other ways to achieve this could be:
   * Write a git post-hook to run these commands automatically whenever someone git clone's the repo.
   * Write a gulp task to run these
   * Write a init script that will run these commands
-1. Run 'gulp serve' to open a 'livereload' server.
 
+ 1. Run 'gulp serve' to open a 'livereload' server.
  1. There is no concept of virtualenv.  If the module available in the system wide directory doesn't cut it for you, there is an option to install it in your project specific node_modules folder.
-  
  1. Frankly, I still don't understand completely npm's module resolution algorithm.  Will have to observe it more closely.
  
 #### TODO
