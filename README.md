@@ -69,16 +69,28 @@ We need to have node and npm installed.  This is more of a systems configuration
   
    export NODE_PATH=$HOME/.npm-packages/lib/node_modules
  
- 1. Install gulp - npm install -g gulp
- 1. Install bower - npm install -g bower
- 1. Install dependencies from this repo's package.json - npm install
- 1. Install bower components - bower install
+ 1. Install gulp 
+ ```
+ npm install -g gulp
+ ```
+ 1. Install bower
+ ```
+ npm install -g bower
+ ```
+ 1. Navigate to this directories home and install dependencies from this repo's package.json
+ ```
+ npm install
+ ```
+ 1. Install bower components
+ ```
+ bower install
+ ```
  1. Above steps are a one time thing and will ensure all development dependencies are met.  Some other ways to achieve this could be:
   * Write a git post-hook to run these commands automatically whenever someone git clone's the repo.
   * Write a gulp task to run these
   * Write a init script that will run these commands
 
- 1. Run 'gulp serve' to open a 'livereload' server.
+ 1. Run **gulp serve** to open a 'livereload' server.
  1. There is no concept of virtualenv.  If the module available in the system wide directory doesn't cut it for you, there is an option to install it in your project specific node_modules folder.
  1. Frankly, I still don't understand completely npm's module resolution algorithm.  Will have to observe it more closely.
  
