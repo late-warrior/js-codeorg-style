@@ -1,8 +1,13 @@
 Table of contents
 
-- [Goal](#Goal)
-- [Maven vs Grunt/Gulp](#Maven vs Grunt/Gulp)
-
+- [Goal](#goal)
+- [Maven vs Grunt/Gulp](#maven-vs-gruntgulp)
+- [Scaffolding](#scaffolding)
+- [Tools/Terminology](#toolsterminology)
+- [Client side vs Server side Javascript](#client-side-vs-server-side-javascript)
+- [Using this repo](using-this-repo)
+- [Running the server](running-the-server)
+- [TODO](#todo)
 ##Goal
   Use Highcharts as the base library. All the changes and enhancements should be independent and be written as plugins.  Upgrading the library version should be only a config change (bumping up version number in some configuration file).
 
