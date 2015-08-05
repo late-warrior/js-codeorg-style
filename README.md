@@ -1,3 +1,8 @@
+Table of contents
+
+- [Goal](#Goal)
+- [Maven vs Grunt/Gulp](#Maven vs Grunt/Gulp)
+
 ##Goal
   Use Highcharts as the base library. All the changes and enhancements should be independent and be written as plugins.  Upgrading the library version should be only a config change (bumping up version number in some configuration file).
 
