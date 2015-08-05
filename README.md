@@ -46,7 +46,7 @@ Lot of the operations we do in gulp can be done in ant - especially the file/dir
 
 ## Scaffolding
 
-I had no inclination towards any way to organize directories.  So, I headed over to (Yeoman)[http://yeoman.io] and made use of one of their *generators*.   A generator is a scaffolding tool that helps you get started quickly.  My only expectation from the generator was to create the folder structure for me and so I chose the simplest one available - gulp-webapp.
+I had no inclination towards any way to organize directories.  So, I headed over to [Yeoman](http://yeoman.io) and made use of one of their *generators*.   A generator is a scaffolding tool that helps you get started quickly.  My only expectation from the generator was to create the folder structure for me and so I chose the simplest one available - gulp-webapp.
 
 The scaffolding gave other benefits like jslinting, setting up test cases, coverage reports etc.
 
